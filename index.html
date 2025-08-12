@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aomsin — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>hello world</h1>
-    </header>
-    <main style="text-align: center;">
-        <p>My first web</p>
-    </main>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="reveal">สวัสดีครับ 👋 ผมคือ <span id="name">Aomsin</span></h1>
+        <p class="muted reveal">นักเรียนคอร์ส <strong>Digital Skills 0→100</strong> กำลังฝึก Web Dev + Python Automation</p>
+        <div class="cta reveal">
+          <a class="btn" href="mailto:you@email.com">ติดต่อฉัน</a>
+          <a class="btn outline" href="https://github.com/Aomsin1502" target="_blank" rel="noopener">GitHub</a>
+          <button id="themeToggle" class="btn ghost" aria-label="สลับธีม">สลับธีม</button>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <img class="avatar float" src="https://via.placeholder.com/220" alt="My Photo" />
+      </div>
+    </div>
+    <div class="hero__bg" aria-hidden="true"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="card reveal">
+      <h2>สกิลที่กำลังเรียน</h2>
+      <ul class="tags">
+        <li>#HTML</li><li>#CSS</li><li>#JavaScript</li><li>#Git/GitHub</li><li>#Python</li>
+      </ul>
+      <p class="muted">โฟกัสสัปดาห์นี้: HTML/CSS Responsive, GitHub Pages, และ JS DOM เบื้องต้น</p>
+    </section>
+
+    <section class="grid">
+      <article class="card hover-lift reveal">
+        <h3>My First Web</h3>
+        <p class="muted">หน้าเว็บแรกบน GitHub Pages พร้อมธีมและพื้นหลังแบบไหล</p>
+        <a class="link" href="./index.html">เปิดดู</a>
+      </article>
+      <article class="card hover-lift reveal">
+        <h3>JS Hello Console</h3>
+        <p class="muted">ลองเปิด DevTools (F12) แล้วดู console.log()</p>
+        <a class="link" href="#" onclick="alert('เปิด DevTools → Console ดูข้อความได้เลย');return false;">วิธีดู</a>
+      </article>
+      <article class="card hover-lift reveal">
+        <h3>Python Hello</h3>
+        <p class="muted">สคริปต์ Python ง่าย ๆ สำหรับทดลองรันใน Terminal</p>
+        <a class="link" href="https://github.com/Aomsin1502/digital-skills-week1/blob/main/hello.py" target="_blank">ดูโค้ด</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Aomsin — Built with HTML/CSS/JS</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
